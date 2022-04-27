@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="bar-input">CHAMPAGNE PREMIUM:</div>
+            <div class="bar-price-wrapper">
+                <div id="bar1price" class="bar-price">200</div>
+                $
+            </div>
+            <div class="bar-math">
+                <button id="0" class="bar-button-substract">-</button>
+                <p id="bar1quantity" class="bar-number">0</p>
+                <button id="0" class="bar-button-add">+</button>
+            </div>
+            <div class="bar-result-wrapper">
+                <div id="bar1total" class="bar-result"></div>
+                $
+            </div>
+        </div>
+        <div class="child">
+            <div class="bar-input">CHAMPAGNE PREMIUM:</div>
+            <div class="bar-price-wrapper">
+                <div id="bar1price" class="bar-price">200</div>
+                $
+            </div>
+            <div class="bar-math">
+                <button id="0" class="bar-button-substract">-</button>
+                <p id="bar1quantity" class="bar-number">0</p>
+                <button id="0" class="bar-button-add">+</button>
+            </div>
+            <div class="bar-result-wrapper">
+                <div id="bar1total" class="bar-result"></div>
+                $
+            </div>
+        </div>
+        <div class="child">
+            <div class="bar-input">CHAMPAGNE PREMIUM:</div>
+            <div class="bar-price-wrapper">
+                <div id="bar1price" class="bar-price">200</div>
+                $
+            </div>
+            <div class="bar-math">
+                <button id="0" class="bar-button-substract">-</button>
+                <p id="bar1quantity" class="bar-number">0</p>
+                <button id="0" class="bar-button-add">+</button>
+            </div>
+            <div class="bar-result-wrapper">
+                <div id="bar1total" class="bar-result"></div>
+                $
+            </div>
+        </div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="total-wrapper">
+            TOTAL:
+            <div id="total"></div>
+            $
+        </div>
+    </div>
+    <script>
+        const total = document.getElementById("total");
+        const buttonAdd = document.querySelectorAll(".bar-button-add"); 
+        const buttonSubstract = document.querySelectorAll(".bar-button-substract"); 
+        const price = document.querySelectorAll(".bar-price");
+        const quantity = document.querySelectorAll(".bar-number");
+        const subtotal = document.querySelectorAll(".bar-result");
+        var counter=[];
+        var totalSum=0;
+        for (let i = 0; i < buttonAdd.length; i++) {
+            counter[i]=0;
+            buttonAdd[i].addEventListener("click",function(){
+                quantity[i].innerHTML=++counter[i];
+                var p = parseInt(price[i].innerHTML);
+                var q = parseInt(quantity[i].innerHTML);
+                subtotal[i].innerHTML=p*q;
+                totalSum=totalSum+(p);
+                total.innerHTML=totalSum;
+                
+            })
+            buttonSubstract[i].addEventListener("click",function(){
+                quantity[i].innerHTML=--counter[i];
+                var p = parseInt(price[i].innerHTML);
+                var q = parseInt(quantity[i].innerHTML);
+                subtotal[i].innerHTML=p*q;
+                totalSum=totalSum-(p);
+                total.innerHTML=totalSum;
+            })
+        }
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: firebrick;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.child{
+    display: flex;
+    border-radius: 1.5vw;
+    height: 5vh;
+    width: 80vw;
+    border: solid;
+    border-color: black;
+    margin: auto;
+}
+.bar-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    border-radius: 1vw;
+    background-color: red;
+}
+.bar-price{
+    display: flex;
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+.bar-math{
+    display: flex;
+    width: 25vw;
+    border-radius: 1vw;
+    background-color: blue;
+}
+.bar-number{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+}
+.bar-button-add{
+    width: 38%;
+}
+.bar-button-substract{
+    width: 38%;
+}
+.bar-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: green;
+}
+.bar-result-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar-price-wrapper{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
