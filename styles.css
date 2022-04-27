@@ -1,3 +1,4 @@
+body{margin: 0; padding: 0; }
 .screen{
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@
     display: flex;
     border-radius: 1.5vw;
     height: 5vh;
-    width: 80vw;
+    width: 85vw;
     border: solid;
     border-color: black;
     margin: auto;
@@ -29,9 +30,16 @@
     border-radius: 1vw;
     background-color: red;
 }
+.bar-price-wrapper{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1vw;
+}
 .bar-price{
     display: flex;
-    width: 5vw;
+    width: 8vw;
     justify-content: center;
     align-items: center;
 }
@@ -59,15 +67,9 @@
     align-items: center;
     width: 10vw;
     border-radius: 1vw;
-    background-color: green;
+   
 }
 .bar-result-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bar-price-wrapper{
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
