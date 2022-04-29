@@ -67,14 +67,20 @@ body{margin: 0; padding: 0; }
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: .5vw;
 }
 .total-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5vh;
-    height: 2.5vh;
-    width: 20vw;
+    margin-bottom: 2.5vh;
+    height: 5vh;
+    width: 25vw;
     border-radius: 1vw;
-    background-color: #3d7068;
+    background-color: #a089af;
+}
+#total{
+
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 }

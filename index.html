@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="code.js"></script>
+    <title>Sugar Fest</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0; 
+        }
+        .parent{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #48beff;
+        }
+        .child{
+            font-size: 90%;
+            display: flex;
+            border-radius: 1.5vw;
+            height: 5vh;
+            width: 90vw;
+            border: solid;
+            border-color: #3DFAFF;
+            margin: auto;
+        }
+        .bar-input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+            border-radius: 1vw 0 0 1vw;
+            background-color: #43C59E;
+        }
+        .bar-price-wrapper{
+            background-color: #43C59E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 1vw;
+        }
+        .bar-price{
+            display: flex;
+            width: 8vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-math{
+            display: flex;
+            width: 25vw;
+            border-radius: 1vw;
+            background-color: #43C59E;
+        }
+        .bar-number{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24%;
+        }
+        .bar-button-add{
+            width: 38%;
+        }
+        .bar-button-substract{
+            width: 38%;
+        }
+        .bar-result{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10vw;
+            border-radius: 1vw;
+        }
+        .bar-result-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+        }
+        .total-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5vh;
+            height: 5vh;
+            width: 30vw;
+            border-radius: 1vw;
+            background-color: #a089af;
+        }
+        #total{
+            margin-left: 0.5vw;
+            margin-right: 0.5vw;
+        }
+    </style>
 </head>
 <body>
     <div class="parent">
@@ -210,18 +298,18 @@
                 subtotal[i].innerHTML=p*q;
                 totalSum=totalSum+p;
                 total.innerHTML=totalSum;
-                
             })
             buttonSubstract[i].addEventListener("click",function(){
-                quantity[i].innerHTML=--counter[i];
-                var p = parseInt(price[i].innerHTML);
-                var q = parseInt(quantity[i].innerHTML);
-                subtotal[i].innerHTML=p*q;
-                totalSum=totalSum-p;
-                total.innerHTML=totalSum;
+                if(counter[i]>=1){
+                    quantity[i].innerHTML=--counter[i];
+                    var p = parseInt(price[i].innerHTML);
+                    var q = parseInt(quantity[i].innerHTML);
+                    subtotal[i].innerHTML=p*q;
+                    totalSum=totalSum-p;
+                    total.innerHTML=totalSum;
+                }
             })
         }
-      
     </script>
 </body>
 </html>
