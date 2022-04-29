@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="child">
-            <div class="bar-input">COMO SMIRNOFF:</div>
+            <div class="bar-input">COMBO SMIRNOFF:</div>
             <div class="bar-price-wrapper">
                 <div id="bar1price" class="bar-price">3000</div>
                 $
@@ -188,7 +188,7 @@
         </div>
         <div class="total-wrapper">
             TOTAL:
-            <div id="total"></div>
+            <div id="total">0</div>
             $
         </div>
     </div>
@@ -208,7 +208,7 @@
                 var p = parseInt(price[i].innerHTML);
                 var q = parseInt(quantity[i].innerHTML);
                 subtotal[i].innerHTML=p*q;
-                totalSum=totalSum+(p);
+                totalSum=totalSum+p;
                 total.innerHTML=totalSum;
                 
             })
@@ -217,7 +217,7 @@
                 var p = parseInt(price[i].innerHTML);
                 var q = parseInt(quantity[i].innerHTML);
                 subtotal[i].innerHTML=p*q;
-                totalSum=totalSum-(p);
+                totalSum=totalSum-p;
                 total.innerHTML=totalSum;
             })
         }

@@ -1,17 +1,11 @@
 body{margin: 0; padding: 0; }
-.screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: firebrick;
-}
 .parent{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #48beff;
 }
 .child{
     display: flex;
@@ -19,7 +13,7 @@ body{margin: 0; padding: 0; }
     height: 5vh;
     width: 85vw;
     border: solid;
-    border-color: black;
+    border-color: #3DFAFF;
     margin: auto;
 }
 .bar-input{
@@ -27,11 +21,11 @@ body{margin: 0; padding: 0; }
     justify-content: center;
     align-items: center;
     width: 40vw;
-    border-radius: 1vw;
-    background-color: red;
+    border-radius: 1vw 0 0 1vw;
+    background-color: #43C59E;
 }
 .bar-price-wrapper{
-    background-color: red;
+    background-color: #43C59E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +41,7 @@ body{margin: 0; padding: 0; }
     display: flex;
     width: 25vw;
     border-radius: 1vw;
-    background-color: blue;
+    background-color: #43C59E;
 }
 .bar-number{ 
     display: flex;
@@ -79,4 +73,8 @@ body{margin: 0; padding: 0; }
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5vh;
+    height: 2.5vh;
+    width: 20vw;
+    border-radius: 1vw;
+    background-color: #3d7068;
 }
